@@ -1,0 +1,57 @@
+.contanier{
+    width: 45%;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 7px black;
+    /*  сместить тень в право/в низ/длина тени*/
+    padding: 30px 15px;
+}
+.taitle{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.form-blok{
+    margin-bottom: 20px;
+}
+.form-descor{
+    color: #777;
+    font-style: italic;
+    /* курсивный текст */
+}
+.my-lable{
+    color: #555;
+    font-weight: 900;
+    cursor: pointer;
+    /* Курсор в форме нажатия */
+}
+.my-input{
+   /* Убираем подсветку */
+   outline: none;
+   width: 230px;
+   padding: 10px 20px;
+   border: none;
+   border-bottom: 1px solid blue;
+}
+.form-texstetea{
+    resize: none;
+    /* чтобы поле немогло менять размер */
+    width: 100%;
+    height: 100px;
+    outline: none;
+}
+.btn{
+    outline: none;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #f88c8c;
+    border: 1px solid #f22c2c;
+}
+.form-texstetea:hover{
+    background-color: rebeccapurple;
+;
+}

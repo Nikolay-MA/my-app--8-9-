@@ -1,0 +1,15 @@
+/* .container1{
+    border: 1px solid rgb(255, 0, 0);
+    width: 8%;
+}
+.container2{
+    
+    border: 1px solid black;
+    width: 70%;
+} */
+.navbar li{
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+   }
