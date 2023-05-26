@@ -8,11 +8,8 @@ const Reg = ({ cookie,  setCookie }) => {
         setCookie('Name', event.target[0].value, { path: '/' })
     }
     useEffect(() => {
-        // setName1({ Name2: cookie.Name })
         console.log(cookie.Name);
-
         if (cookie.Name != 'undefined' && cookie.Name != undefined && cookie.Name != '') {
-            // setName1({ Name2: cookie.Name })
             navigate('/Me')
         }
     }, [cookie.Name])
@@ -28,8 +25,6 @@ const Reg = ({ cookie,  setCookie }) => {
                     <button type="reset" className="btn">Очистить</button>
                     <button className="btn">Регистрация</button>
                 </div>
-                {/* <NameForm name={cookie.name} onChange={onChange} /> */}
-
             </form>
 
         </>

@@ -1,7 +1,5 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-// import { Route, Routes, useNavigate } from "./Reg/Reg";
 import Projects from "./Projects/Projects";
-// import Domd3 from "./Domd3/Domd3";
 import NavBar from "./NavBar/NavBar";
 import AboutMe from "./AboutMe/AboutMe";
 import { useEffect } from "react";
@@ -14,11 +12,8 @@ function App() {
   const Navigate = useNavigate()
   useEffect(() => {
 
-    // setName1({ Name2: cookie.Name })
     if (cookie.Name === 'undefined' || cookie.Name === '' || cookie.Name === undefined) {
-      // console.log(cookie.Name);
       Navigate('/Reg')
-      // console.log(cookie.Name);
     } else{
       Navigate('/Me')
       console.log(1);
