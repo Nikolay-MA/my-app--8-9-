@@ -1,14 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import "./style.css";
 import { useEffect } from "react";
-const Reg = ({ cookie,  setCookie }) => {
+const Reg = ({ cookie, setCookie }) => {
     const navigate = useNavigate()
     const loadhandler = (event) => {
         event.preventDefault();
         setCookie('Name', event.target[0].value, { path: '/' })
     }
     useEffect(() => {
-        console.log(cookie.Name);
         if (cookie.Name != 'undefined' && cookie.Name != undefined && cookie.Name != '') {
             navigate('/Me')
         }
@@ -26,7 +25,6 @@ const Reg = ({ cookie,  setCookie }) => {
                     <button className="btn">Регистрация</button>
                 </div>
             </form>
-
         </>
     );
 }
