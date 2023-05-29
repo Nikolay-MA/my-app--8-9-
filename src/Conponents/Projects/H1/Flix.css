@@ -1,0 +1,7 @@
+.Flix {
+    display: flex;
+}
+
+.Flix div {
+    border: 1px solid black;
+}

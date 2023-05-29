@@ -1,12 +1,12 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-import Projects from "./Projects/Projects";
-import NavBar from "./NavBar/NavBar";
-import AboutMe from "./AboutMe/AboutMe";
+import Projects from "./Conponents/Projects/Projects";
+import NavBar from "./Conponents/NavBar/NavBar";
+import AboutMe from "./Conponents/AboutMe/AboutMe";
 import { useEffect } from "react";
-import Reg from "./Reg/Reg";
+import Reg from "./Conponents/Reg/Reg";
 import { CookiesProvider } from 'react-cookie';
 import { useCookies } from 'react-cookie';
-import Me from "./Me/Me";
+import Me from "./Conponents/Me/Me";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
@@ -21,18 +21,18 @@ function App() {
   }, [])
   useEffect(() => {
     if (cookie.Name != 'undefined' && cookie.Name != undefined && cookie.Name != '') {
-        toast('🦄 Вы зарегистрированы!', {
-            position: "bottom-right",
-            autoClose: 15000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: false,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-        });
+      toast('🦄 Вы зарегистрированы!', {
+        position: "bottom-right",
+        autoClose: 15000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     }
-}, [cookie.Name])
+  }, [cookie.Name])
   return (
     <>
       {cookie.Name && <NavBar removeCookie={removeCookie} cookie={cookie.Name} />}
@@ -57,7 +57,7 @@ function App() {
         pauseOnHover={false}
         theme="light"
       />
-      
+
     </>
   );
 }

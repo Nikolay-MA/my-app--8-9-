@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import './std.css'
-export default function NavBar({removeCookie,cookie}) {
+export default function NavBar({ removeCookie, cookie }) {
     const Navigate = useNavigate()
     const onCeng1 = () => {
         removeCookie('Name', { path: '/' })
